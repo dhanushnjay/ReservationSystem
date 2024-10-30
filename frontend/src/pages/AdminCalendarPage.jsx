@@ -10,7 +10,7 @@ const AdminCalendarPage = () => {
   const [reservations, setReservations] = useState([]);
   const [selectedRoom, setSelectedRoom] = useState('');
 
-  // Fetch reservations whenever date or selectedRoom changes
+  // Fetch reservations whenever date or selectedRoom changess
   useEffect(() => {
     const fetchReservations = async () => {
       const formattedDate = date.toISOString().split('T')[0]; // Format date as YYYY-MM-DD
